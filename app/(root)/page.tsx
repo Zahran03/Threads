@@ -1,7 +1,11 @@
+import { ClerkProvider, UserButton } from "@clerk/nextjs";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Threads App</h1>
-    </main>
+    <html lang="en">
+      <ClerkProvider>
+        <UserButton />
+      </ClerkProvider>
+    </html>
   );
 }
